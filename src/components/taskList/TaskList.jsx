@@ -1,10 +1,17 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import TaskForm from '../taskForm/TaskForm';
 import Task from '../task/Task';
 import './taskList.css';
 
 export default function TaskList() {
-    const [tasks, setTasks] = useState([]);
+    const [tasks, setTasks] = useState(() => {
+        const storedTasks = localStorage.getItem('tasks');
+        return storedTasks ? JSON.parse(storedTasks) : [];
+    });
+
+    useEffect(() => {
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+    }, [tasks]);
 
     const addTask = task => {
         if (task.text.trim()) {
