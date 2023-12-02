@@ -27,6 +27,7 @@ export default function TaskForm({ onSubmit }) {
                 type='text'
                 placeholder='Ingresa una tarea'
                 name='text'
+                autoComplete='off'
                 onChange={handleChange}
             />
             <button className='task-button'>Agregar tarea</button>

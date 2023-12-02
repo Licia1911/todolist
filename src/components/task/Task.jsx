@@ -8,6 +8,7 @@ export default function Task({ id, text, completed, completeTask, deleteTask }) 
                 {text}
             </div>
             <div className='task-icon-container' onClick={() => deleteTask(id)}>
+                <img className='icon-container' src="assets/recycling-bin.png" alt="recycling-bin" />
             </div>
         </div>
     )

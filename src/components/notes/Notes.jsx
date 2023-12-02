@@ -14,31 +14,37 @@ export default function Notes() {
                     className='input-notes'
                     type='text'
                     name='text'
+                    autoComplete='off'
                 />
                 <input
                     className='input-notes'
                     type='text'
                     name='text'
+                    autoComplete='off'
                 />
                 <input
                     className='input-notes'
                     type='text'
                     name='text'
+                    autoComplete='off'
                 />
                 <input
                     className='input-notes'
                     type='text'
                     name='text'
+                    autoComplete='off'
                 />
                 <input
                     className='input-notes'
                     type='text'
                     name='text'
+                    autoComplete='off'
                 />
                 <input
                     className='input-notes'
                     type='text'
                     name='text'
+                    autoComplete='off'
                 />
 
             </div>

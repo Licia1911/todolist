@@ -4,12 +4,28 @@
   justify-content: center;
 }
 
+.title-list {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+}
+
 h1 {
   font-family: 'Glass Antiqua', cursive;
   color: #1b1b22;
   font-size: 40px;
-  text-align: left;
-  margin: 20px 90px;
+  margin-left: 100px;
+}
+
+.monster-title {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
 }
 
 .task-app {
@@ -21,9 +37,4 @@ h1 {
   padding: 25px;
   margin: 20px;
   border-radius: 25px;
-}
-
-.icon-app {
-  margin-left: 10px;
-  rotate: 15deg;
 }
